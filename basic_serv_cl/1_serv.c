@@ -74,7 +74,7 @@ int main(){
     int sock=0 , Client_sock=0;
 
     ServerIp.sin_family = AF_INET;
-    ServerIp.sin_port = htons(1234);
+    ServerIp.sin_port = htons(8080);
     ServerIp.sin_addr.s_addr = inet_addr("127.0.0.1");
     sock = socket( AF_INET , SOCK_STREAM, 0 );
     if( bind( sock, (struct sockaddr *)&ServerIp, sizeof(ServerIp)) == -1 )
